@@ -1,0 +1,55 @@
+:root {
+  --primary-color: #001f3f;
+  --secondary-color: #ffb300;
+  --accent-color: #00d4ff;
+  --text-color: #ffffff;
+  --card-bg: rgba(0, 43, 92, 0.8);
+}
+
+/* वॉलेट कनेक्ट बटन */
+.wallet-connect-btn {
+  background: var(--accent-color);
+  color: var(--primary-color);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.wallet-connect-btn.connected {
+  background: var(--secondary-color);
+}
+
+/* मैसेज स्टाइल्स */
+.success-message {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: green;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.error-message {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: red;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+/* कार्ड्स स्टाइलिंग */
+.card {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  color: var(--text-color);
+}
